@@ -6,16 +6,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	title="Securing Europe's critical infrastructure networks"
+	subtitle="Trusted by leading European enterprises and defense contractors to build resilient security architecture that meets the most stringent compliance requirements."
+	centered={true}
+	customers={[
+		{
+			name: "Klaus Weber",
+			position: "CISO, European Defense Systems",
+			imageSrc: "/generated/image-a-professional-european-male-cybersecuri.webp"
+		},
+		{
+			name: "Elena Rossi",
+			position: "Head of Security, Continental Networks",
+			imageSrc: "/generated/image-a-professional-european-female-security-.webp"
+		},
+		{
+			name: "Henrik Johansson",
+			position: "Chief Security Officer, Nordic Infrastructure",
+			imageSrc: "/generated/image-a-professional-european-male-chief-secur.webp"
+		},
+		{
+			name: "Marie Dubois",
+			position: "Director of Cybersecurity, Atlantic Defense",
+			imageSrc: "/generated/image-a-professional-european-female-technolog.webp"
+		},
+		{
+			name: "Andreas Mueller",
+			position: "Security Director, Central European Alliance",
+			imageSrc: "/generated/image-a-professional-european-male-defense-con.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/siemens.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/schneider-electric.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/engie.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/volkswagen.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating

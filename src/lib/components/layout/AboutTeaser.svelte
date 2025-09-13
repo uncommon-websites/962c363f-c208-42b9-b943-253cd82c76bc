@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
+		name: "Dr. Erik Andersen",
 		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		image: "/generated/image-a-european-security-expert-dressed-in-a-.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"After witnessing three major cyberattacks on European infrastructure in 2019, I realized our continent needed its own defense backbone. We can't protect Europe's sovereignty with foreign solutions—we needed to build something from the ground up, by Europeans, for Europeans."`}
 			/>
 
 			<!-- Team Member & CTA Section -->

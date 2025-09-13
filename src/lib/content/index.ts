@@ -1,7 +1,7 @@
 export const CONFIG = {
-	companyName: "Company",
-	description: "Description",
+	companyName: "EuroGuard",
+	description: "Continental-scale security resilience for European networks. Building interconnected defense infrastructure that meets stringent EU cybersecurity compliance requirements.",
 	image: "/og.png",
-	url: "https://example.com",
-	fontFamily: "Inter Variable"
+	url: "https://euroguard.eu",
+	fontFamily: "Stripe Sans, Inter, system-ui, sans-serif"
 };

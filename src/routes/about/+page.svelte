@@ -1,8 +1,6 @@
 <script lang="ts">
 	// Components
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
-
-	// Icons
 	import StakeholderGrid from "$lib/components/layout/StakeholderGrid.svelte";
 	import Story from "./Story.svelte";
 	import SecondaryHero from "$lib/components/layout/hero-sections/SecondaryHero.svelte";
@@ -11,47 +9,43 @@
 	// Constants
 	const values = [
 		{
-			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
+			title: "Sovereignty-first",
+			description: "We respect Europe's data borders and regulatory frameworks. Everything we build is made to uphold EU autonomy, with full transparency and compliance at the core."
 		},
 		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
+			title: "United by defense",
+			description: "We believe Europe is strongest when it secures together. Our platform connects networks across the continent to detect and respond as one."
 		},
 		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
+			title: "Engineered for resilience",
+			description: "We design for failure, recovery, and auditability from day one. Security isn't just a feature—it's our foundation."
 		}
 	];
 </script>
 
 <SecondaryHero
-	generating
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
+	title="Securing Europe from within"
+	subtitle="Resilience built into every network"
+	imageSrc="/generated/image-a-group-of-european-professionals-in-a-m.webp"
 />
 
 <!-- Story Section -->
 <Story
-	generating
 	paragraphs={[
-		"We started in 2018 with a simple goal: make helpful tech that people actually need. While many chase profits, we chose to do things differently.",
-		"Beyond making good products, we care about doing the right thing, being kind to our planet, and making sure everyone can use what we build. That's our compass.",
-		"From day one, we've asked ourselves: 'Does this actually help people?' This question gets us through tough calls and shapes who we are. We're playing the long game here.",
-		"We think about how our work affects real people's lives. We build tech that brings people together, keeps your information safe, and treats everyone fairly. When we stick to these basics, good things happen."
+		"Across Europe, security leaders are under growing pressure to prove regulatory compliance while managing an overwhelming patchwork of disconnected tools. Meeting NIS2, DORA, and GDPR standards is critical—but most tools weren't built with these frameworks in mind. Add sovereignty concerns and foreign-controlled vendors, and the result is a security model that lacks trust, visibility, and scale.",
+		"We've engineered a unified cybersecurity platform that turns fragmented systems into a single, regulation-aligned network. By connecting defense infrastructure across the continent and keeping all data processing within EU borders, we ensure full compliance without compromise. Designed by experts who deeply understand the European regulatory landscape, our platform gives CISOs what they've always needed—security that's reliable, sovereign, and built to scale.",
+		"Our mission is to protect 500 million endpoints across the continent and become the foundation of Europe's digital resilience. By capturing the $47 billion European cybersecurity market, we're not just solving today's compliance challenges—we're setting the standard for tomorrow's digital defenses. Because securing Europe starts by making the network itself resilient, sovereign, and truly unified."
 	]}
 />
 
 <!-- Our Culture Section -->
-<Culture {values} generating />
+<Culture {values} />
 
 <!-- StakeholderGrid Section -->
 <StakeholderGrid
-	generating
 	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
+	title="Our team"
+	subtitle="Your partners in innovation"
 	stakeholders={[
 		{
 			name: "Alex Morgan",
@@ -75,9 +69,8 @@
 />
 
 <StakeholderGrid
-	generating
 	stakeholderType="investor"
-	title="Backed by the best."
+	title="Backed by the best"
 	subtitle="Point Nine, TSIC and others"
 	stakeholders={[
 		{
@@ -97,8 +90,8 @@
 
 <!-- CTA Section -->
 <CallToAction
-	generating
-	title="Ready to collaborate?"
-	subtitle="Let's create something amazing"
-	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
+	title="European compliance is closing in"
+	subtitle="Get ahead now"
+	description="Prove your EU compliance with a unified security platform built for continental scale. Our infrastructure gives you real-time visibility, full data sovereignty, and clear audit trails across every endpoint—so you're not stitching together tools when the clock runs out."
+	imageSrc="/generated/image-a-professional-european-business-person-.webp"
 />

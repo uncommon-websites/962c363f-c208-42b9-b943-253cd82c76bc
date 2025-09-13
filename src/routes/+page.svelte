@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
+	
+	// Icons for Features
+	import IconShield from "~icons/lucide/shield";
+	import IconFileCheck from "~icons/lucide/file-check";
+	import IconMapPin from "~icons/lucide/map-pin";
+	import IconLayers from "~icons/lucide/layers";
+	import IconRadar from "~icons/lucide/radar";
+	import IconLock from "~icons/lucide/lock";
 </script>
 
 <CustomerCardHero
@@ -41,6 +49,7 @@
 		}
 	]}
 />
+
 <LogoScroller 
 	label="Trusted by industry leaders"
 	logoUrls={[
@@ -52,62 +61,92 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Europe's cybersecurity backbone"
+	text="We secure Europe at scale by building interconnected defense infrastructure that meets the continent's most demanding cybersecurity requirements—without compromising data sovereignty or speed. Built specifically for CISOs at European critical infrastructure providers who need to meet NIS2 and GDPR compliance quickly, while ensuring all data processing stays within EU borders."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Björn Lindqvist",
+			position: "Chief Information Security Officer",
+			company: "Nordic Critical Infrastructure",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Compliance audit preparation time reduced from 8 weeks to 2 weeks with their automated EU regulation mapping.\nWe achieved GDPR and NIS2 compliance 60% faster while reducing legal review costs by €200K annually.",
+			image: "/generated/image-a-professional-european-male-ciso-in-a-m.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Isabella Fernández",
+			position: "Director of Cybersecurity",
+			company: "Iberian Defense Systems",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Threat detection improved by 85% while false positives dropped 70%, saving our SOC team 25 hours per week.\nCritical incident response time decreased from 4 hours to 35 minutes, preventing an estimated €2.3M in potential damages.",
+			image: "/generated/image-a-confident-european-female-security-dir.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Pieter van der Berg",
+			position: "Head of Security Operations",
+			company: "Dutch Maritime Security Alliance",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Cross-border threat intelligence sharing reduced security gaps by 90% across our European network.\nInteroperability with existing NATO systems saved €1.8M in infrastructure replacement costs while maintaining full data sovereignty.",
+			image: "/generated/image-a-professional-dutch-male-cybersecurity-.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Continental-scale security architecture"
+	subtitle="Built specifically for European defense contractors and critical infrastructure providers who demand both sovereignty and resilience."
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Continental defense network",
+			description: "Deploy interconnected security infrastructure across all European networks with unified command and control capabilities that scale from national to continental operations.",
+			icon: IconShield
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "EU regulatory compliance suite",
+			description: "Automatically demonstrate adherence to NIS2, GDPR, and Cyber Resilience Act requirements through built-in compliance frameworks that eliminate manual audit preparation.",
+			icon: IconFileCheck
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Data sovereignty guarantee",
+			description: "Every byte of data processing remains within EU borders with legally binding sovereignty assurance that gives CISOs confidence in regulatory compliance.",
+			icon: IconMapPin
+		},
+		{
+			title: "Unified security operations",
+			description: "Replace fragmented security tools with a single integrated platform that provides complete visibility and control across your entire European infrastructure.",
+			icon: IconLayers
+		},
+		{
+			title: "Real-time threat intelligence",
+			description: "Access continental threat intelligence feeds specifically designed for European attack patterns with automated response capabilities that stop threats in seconds.",
+			icon: IconRadar
+		},
+		{
+			title: "Zero-trust architecture",
+			description: "Implement military-grade zero-trust security with granular access controls and continuous verification that meets the highest European defense standards.",
+			icon: IconLock
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+
+<AboutTeaser />
+<CallToAction 
+	title="Secure Europe's critical infrastructure"
+	subtitle="Prove compliance at continental scale"
+	description="Built for European CISOs navigating fragmented security tools and urgent compliance deadlines. Our platform delivers unified protection with guaranteed EU data sovereignty—no patchwork solutions, no regulatory gaps, just defensible security infrastructure that stands up to scrutiny."
+	imageSrc="/generated/image-a-professional-and-confident-european-ch.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Book compliance strategy call",
+			variant: "primary"
+		},
+		{
+			href: "/demo",
+			label: "Request security assessment",
+			variant: "secondary"
+		}
+	]}
+/>
